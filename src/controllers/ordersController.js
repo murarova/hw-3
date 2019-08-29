@@ -1,7 +1,6 @@
 const fs = require('fs');
 const writeOrderData = require('../helpers/writeOrderData');
 const { createOrderDir } = require('../helpers/createDir');
-const checkProductsStok = require('../helpers/checkProductsStok');
 
 const usersList = JSON.parse(fs.readFileSync(`__dirname/../src/db/users/all-users.json`));
 

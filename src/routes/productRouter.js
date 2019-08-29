@@ -4,8 +4,7 @@ const productController = require('../controllers/productController');
 
 router.param('id', productController.checkId);
 
-// router.route(/\/\?ids=([^\/]+?)\/?$/i).get(productController.getFewProducts);
-router.route('/').get(productController.getAllProducts);
+router.route('/').get(productController.getProducts);
 router.route('/:id').get(productController.getProduct);
 
 module.exports = router;

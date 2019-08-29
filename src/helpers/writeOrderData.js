@@ -1,4 +1,3 @@
-// const readFilePro = require('./readFilePro');
 const writeUserPro = require('./writeUserPro');
 
 const writeOrderData = async (path, data, res) => {
